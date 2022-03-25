@@ -18,7 +18,6 @@ export default function TodoForm() {
   const [leftItemsAmount, setLeftItemsAmount] = useState(0);
   const [filter, setFilter] = useState('all');
 
-  // just to look like template
   useEffect(() => {
     setList([
       { name: 'Complete online JavaScript course', isCompleted: true },

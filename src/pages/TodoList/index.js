@@ -30,8 +30,6 @@ export default function TodoList(props) {
 
   return (
     <MainContainer>
-      {/*remind to use react-spring for drag and drop reorder list*/}
-
       <TodoContainer>
         <Header>
           <Title>Todo</Title>
@@ -43,7 +41,6 @@ export default function TodoList(props) {
             )}
           </IconThemeContainer>
         </Header>
-
         <TodoForm />
 
         <TodoFooter>Drag and drop to reorder list</TodoFooter>
