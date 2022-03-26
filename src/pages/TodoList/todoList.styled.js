@@ -1,7 +1,12 @@
 import styled from 'styled-components';
-import {backgroundColor, bgImageDesktop, bgImageMobile, placeholderColor, textColor} from "../../styles/theme";
-import {mobileBreakpoint} from "../../styles/global";
-
+import {
+  backgroundColor,
+  bgImageDesktop,
+  bgImageMobile,
+  placeholderColor,
+  textColor,
+} from '../../styles/theme';
+import { mobileBreakpoint } from '../../styles/global';
 
 export const MainContainer = styled.main`
   display: flex;
@@ -10,7 +15,7 @@ export const MainContainer = styled.main`
   background-color: ${backgroundColor};
 
   transition: all 150ms ease-in-out;
-`
+`;
 
 export const TodoContainer = styled.section`
   max-width: 600px;
@@ -42,32 +47,33 @@ export const TodoContainer = styled.section`
 
     &:before {
       background-image: url(${bgImageMobile});
+      background-size: contain;
     }
   }
-`
+`;
 
 export const Header = styled.header`
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
-`
+`;
 
 export const IconThemeContainer = styled.div`
   cursor: pointer;
-`
+`;
 
 export const Title = styled.h1`
   text-transform: uppercase;
   letter-spacing: 1rem;
-  font-family: "JosefinSans-Bold", sans-serif;
+  font-family: 'JosefinSans-Bold', sans-serif;
   font-weight: bolder;
   font-size: 2rem;
   color: white;
-`
+`;
 
 export const TodoFooter = styled.footer`
   text-align: center;
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: ${placeholderColor};
   display: flex;
   flex-direction: column;
@@ -79,11 +85,11 @@ export const TodoFooter = styled.footer`
     margin-top: 1rem;
 
     & > p {
-      margin-top: .5rem;
+      margin-top: 0.5rem;
     }
   }
 
   @media only screen and (max-width: ${mobileBreakpoint}) {
     margin-top: calc(40px + 2.5rem);
   }
-`
+`;
