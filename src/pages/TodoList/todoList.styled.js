@@ -39,6 +39,7 @@ export const TodoContainer = styled.section`
     background-position: top;
     background-repeat: no-repeat;
     background-image: url(${bgImageDesktop});
+    background-size: cover;
   }
 
   @media only screen and (max-width: ${mobileBreakpoint}) {
