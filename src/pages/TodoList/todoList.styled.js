@@ -10,10 +10,10 @@ import { mobileBreakpoint } from '../../styles/global';
 
 export const MainContainer = styled.main`
   display: flex;
+  width: 100%;
   min-height: 100vh;
   color: ${textColor};
   background-color: ${backgroundColor};
-
   transition: all 150ms ease-in-out;
 `;
 
@@ -34,6 +34,7 @@ export const TodoContainer = styled.section`
     right: 0;
     height: 100%;
     z-index: -1;
+    height: 220px;
 
     background-position: top;
     background-repeat: no-repeat;
@@ -46,8 +47,9 @@ export const TodoContainer = styled.section`
     }
 
     &:before {
+      height: 195px;
       background-image: url(${bgImageMobile});
-      background-size: contain;
+      background-size: cover;
     }
   }
 `;
